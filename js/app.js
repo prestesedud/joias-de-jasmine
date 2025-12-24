@@ -1,5 +1,6 @@
 let swiper = new Swiper(".swiper", {
   effect: "coverflow",
+  loop: true,
   grabCursor: true,
   centeredSlides: true,
   initialSlide: 2,
@@ -16,6 +17,8 @@ let swiper = new Swiper(".swiper", {
     click(swiper, event) {
       if (swiper.clickedIndex !== undefined) {
         swiper.slideTo(swiper.clickedIndex);
+
+        // console.log(swiper.)
       }
     },
   },
@@ -28,3 +31,4 @@ let swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   }
 });
+

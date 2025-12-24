@@ -13,6 +13,7 @@
 
 body {
   font-family: "Josefin Slab", Arial, Helvetica, sans-serif;
+  background-color: var(--fundo);
 }
 
 main {
@@ -20,11 +21,18 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center; 
-  min-height: 100vh;
+  margin-top: 20px;
   background-color: var(--fundo);
   color: #ffffff;
   overflow: hidden;
   padding: 0;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  background-color: var(--fundo);
+
 }
 
 .lancamentos h1 {
@@ -45,13 +53,14 @@ main {
 
 
 .swiper {
-  width: 100%;
+  display: flex;
+  width: 80%;
   padding: 50px 0;
 }
 
 .swiper-slide {
   position: relative;
-  width: 320px;
+  width: 480px;
   aspect-ratio: 3/4;
   border-radius: 14px;
   border: 1px solid rgba(177, 177, 177, 0.4);
@@ -73,21 +82,32 @@ main {
   height: 40px;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+
+/* modificar os botões swipe aqui */
+/* .swiper-button-prev{
+  background: red;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/* .swiper-button-next {
   background: rgba(139, 69, 19, 0.2);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.swiper-button-prev::after,
+
+
+/* .swiper-button-prev::after,
 .swiper-button-next::after {
-}
+
+} */
 
 :root {
-  --verde-claro: #b5fdf2;
+  --verde-claro: #e3e3e3;
   --titulo: #1e1e1e;
   --titulo2: #9f5f5f;
   --descricao-produto: #a8a8a8;
@@ -96,9 +116,9 @@ main {
   --color-btn: rgb(28, 88, 78);
 }
 
-.background-verde {
+/* .background-verde {
   background: var(--verde-claro);
-}
+} */
 
 /* classes reutilizáveis */
 .container {
@@ -149,6 +169,7 @@ nav {
 
 .ul li a {
   color: var(--titulo);
+  font-family: ;
 }
 
 .ul li a:hover {
